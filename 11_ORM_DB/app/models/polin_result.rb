@@ -1,0 +1,2 @@
+class PolinResult < ApplicationRecord
+end

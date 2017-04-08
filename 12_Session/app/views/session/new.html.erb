@@ -1,0 +1,24 @@
+<div class='container'>
+  <div class='headline'><%= t('signin') %></div>
+  <div>
+    <%= form_for(:session, :url => session_path) do |f| %>
+      <div class='field'>
+        <%= f.label t('login'), class: 'user_input_label', for: 'session_login' %>
+        <%= f.text_field :login %>
+      </div>
+      <div class='field'>
+        <%= f.label t('password'), class: 'user_input_label', for: 'session_password' %>
+        <%= f.password_field :password %>
+      </div>
+      <div class='field'>
+        <%= f.submit t('signin') %>
+      </div>
+    <% end %>
+  </div>
+
+  <div id='notice'><%= notice %></div>
+  <div>
+    <span id='new_user_span'><%= t('new_user_qst') %> &nbsp;</span>
+    <%= link_to t('signup_now'), signup_path %>
+  </div>
+</div>

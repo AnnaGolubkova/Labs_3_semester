@@ -1,0 +1,20 @@
+<div class='side_frame'>
+</div>
+
+<div class='container sqrt_page'>
+  <div class="valbut">
+    <%= form_tag('/sqrt_approx', :method => "get") do %>
+        <%= label_tag("Value:") %>
+        <%= text_field_tag(:v1) %> <br/>
+        <br/>
+        <%= submit_tag("Calculation") %>
+    <% end %>
+  </div>
+</div>
+
+<div class='side_frame' id='current_user'>
+  <div>
+    <div class='headline'><%= t('user') + User.find(session[:current_user_id]).login %></div>
+    <%= link_to t('user_page') , user_path %>
+  </div>
+</div>

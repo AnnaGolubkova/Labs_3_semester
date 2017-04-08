@@ -1,0 +1,24 @@
+<div class='headline'><%= t('factorial') %></div>
+<div>
+    <%= form_tag('/factorial/view', :method => 'get') do %>
+        <div>
+          <%= label_tag('enter_number') %>
+          <%= text_field_tag(:v1) %>
+        </div>
+        
+        <br/>
+        
+            <div>
+            <%= radio_button_tag(:format, 'html', true, id: 'html') %>
+            <%= label_tag('HTML', ('HTML').html_safe, for: 'html') %>
+            <%= radio_button_tag(:format, 'xml', false, id: 'xml') %>
+            <%= label_tag('XML', ('XML').html_safe, for: 'xml') %>
+            </div>
+        
+        <br/>
+        
+        <div>
+          <%= submit_tag('claculate') %>
+        </div>
+    <% end %>
+</div>

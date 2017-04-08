@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hash>
+  <result>
+    <description>Result</description>
+    <type>Array</type>
+    <value type="array">
+      <value type="array">
+        <value>0</value>
+        <value>0</value>
+      </value>
+      <value type="array">
+        <value>1</value>
+        <value>1</value>
+      </value>
+      <value type="array">
+        <value>3</value>
+        <value>11</value>
+      </value>
+      <value type="array">
+        <value>5</value>
+        <value>101</value>
+      </value>
+      <value type="array">
+        <value>7</value>
+        <value>111</value>
+      </value>
+      <value type="array">
+        <value>9</value>
+        <value>1001</value>
+      </value>
+      <value type="array">
+        <value>33</value>
+        <value>100001</value>
+      </value>
+      <value type="array">
+        <value>99</value>
+        <value>1100011</value>
+      </value>
+    </value>
+  </result>
+  <text>
+    <description>Auto translating strings</description>
+    <decimal>
+      <type>String</type>
+      <value>decimal</value>
+    </decimal>
+    <binary>
+      <type>String</type>
+      <value>binary</value>
+    </binary>
+    <repeatcalculation>
+      <type>String</type>
+      <value>repeat_calculation</value>
+    </repeatcalculation>
+  </text>
+</hash>

@@ -1,0 +1,21 @@
+<div class='container'>
+  <div class='headline'><%= t('user_info') %></div>
+  <div class='user_information'>
+    <strong id='login_label'><%= t('login') %>:</strong>
+    <%= @user.login %>
+  </div>
+  <div class='user_information'>
+    <strong><%= t('password') %>:</strong>
+    <%= @user.password_filtered %>
+  </div>
+
+  <div id='user_control_links'>
+    <%= link_to t('signout'), signout_path %>
+    <%= link_to t('edit'), user_edit_path %>
+    <%= link_to t('destroy'), destroy_user_path, data: { confirm: t('are_you_sure') } %>
+    <%= link_to t('all_users'), users_path %>
+    <%= link_to t('back'), root_path %>
+  </div>
+
+  <div id='notice'><%= notice %></div>
+</div>

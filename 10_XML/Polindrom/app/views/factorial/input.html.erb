@@ -1,0 +1,8 @@
+<div class="valbut">
+  <%= form_tag("/factorial/view.xml", :method => "get") do %>
+  <%= label_tag("Value:") %>
+  <%= text_field_tag(:v1) %> <br/>
+<br/>
+<%= submit_tag("Calculation") %>
+<% end %>
+</div>

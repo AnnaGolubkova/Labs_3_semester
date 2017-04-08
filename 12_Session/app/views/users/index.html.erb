@@ -1,0 +1,21 @@
+<div class='container'>
+  <div class='headline'><%= t('all_users') %></div>
+
+  <div class='table' id='users_table'>
+
+    <div class='row header'>
+      <div class='cell'><%= t('login') %></div>
+      <div class='cell'><%= t('password') %></div>
+    </div>
+
+    <% @users.each do |user| %>
+      <div class='row'>
+        <div class='cell'><%= user.login %></div>
+        <div class='cell'><%= user.password_filtered %></div>
+      </div>
+    <% end %>
+
+  </div>
+
+  <div><%= link_to t('back'), user_path %></div>
+</div>

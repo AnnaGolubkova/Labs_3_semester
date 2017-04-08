@@ -1,0 +1,97 @@
+a, input[type="submit"]{
+text-decoration:none; text-align:center; 
+ padding:9px 13px; 
+ border:none; 
+ -webkit-border-radius:7px;
+ -moz-border-radius:7px; 
+ border-radius: 7px; 
+ font:19px Tahoma, Geneva, sans-serif; 
+ font-weight:bold; 
+ color:#ffffff; 
+ background-color:#d7ffc7; 
+ background-image: -moz-linear-gradient(top, #d7ffc7 0%, #2edb34 100%); 
+ background-image: -webkit-linear-gradient(top, #d7ffc7 0%, #2edb34 100%); 
+ background-image: -o-linear-gradient(top, #d7ffc7 0%, #2edb34 100%); 
+ background-image: -ms-linear-gradient(top, #d7ffc7 0% ,#2edb34 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2edb34', endColorstr='#2edb34',GradientType=0 ); 
+ background-image: linear-gradient(top, #d7ffc7 0% ,#2edb34 100%);   
+ -webkit-box-shadow:inset 0,0,0px 0,0,0px 1,1,1px #ffffff,#ffffff,#ffffff;  -moz-box-shadow:inset 0px 0px 1px #ffffff;  box-shadow:inset 0px 0px 1px #ffffff;  
+}
+
+.space{margin:30px;} 
+
+a:hover,
+input[type="submit"]:hover{
+    padding:9px 13px; 
+ border:none; 
+ -webkit-border-radius:7px;
+ -moz-border-radius:7px; 
+ border-radius: 7px; 
+ font:19px Tahoma, Geneva, sans-serif; 
+ font-weight:bold; 
+ color:#ffffff; 
+ background-color:#f2f0c4; 
+ background-image: -moz-linear-gradient(top, #f2f0c4 0%, #65ff36 100%); 
+ background-image: -webkit-linear-gradient(top, #f2f0c4 0%, #65ff36 100%); 
+ background-image: -o-linear-gradient(top, #f2f0c4 0%, #65ff36 100%); 
+ background-image: -ms-linear-gradient(top, #f2f0c4 0% ,#65ff36 100%); 
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#65ff36', endColorstr='#65ff36',GradientType=0 ); 
+ background-image: linear-gradient(top, #f2f0c4 0% ,#65ff36 100%);   
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+}
+
+form{
+    font-size: large;
+}
+
+input[type="text"]{
+    border-color: #2d2d2d;
+    border-style: solid;
+    border-width: 1px;
+    width: 75px ;
+}
+
+input[type="text"]:hover,
+input[type="text"]:active,
+input[type="text"]:focus{
+    border-color: #09dc40;
+    outline: none;
+}
+
+.valbut{
+    padding: 100px;
+    margin: auto;
+
+}
+
+.table {    
+    margin: auto;}
+
+.row{
+    display: table;
+    box-sizing: border-box;
+    border-right: solid 1px;
+    width: 700px;
+}
+
+.header{
+    font-weight: bold;
+    border-top: solid 1px;
+}
+
+.cell{
+    display: table-cell;
+    vertical-align: top;
+    box-sizing: border-box;
+    border-left: solid 1px;
+    border-bottom: solid 1px;
+    text-align: center;
+    width: 33%;
+}
+
+.result{
+    margin: 200px;
+    color: green;
+}

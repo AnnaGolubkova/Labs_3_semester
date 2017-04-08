@@ -1,0 +1,141 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body{
+    color: #2d2d2d;
+    font-family: sans-serif;
+}
+
+.container>div{
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+
+input[type="submit"]{
+    background-color: #fff;
+    font-family: sans-serif;
+}
+
+form{
+    font-size: large;
+}
+
+input[type="text"],
+input[type="password"]{
+    border-color: #2d2d2d;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+.headline{
+    font-size: xx-large;
+}
+
+.row{
+    display: table;
+    box-sizing: border-box;
+    border-right: solid 1px;
+    margin: auto;
+    width: 500px;
+}
+
+.header{
+    font-weight: bold;
+    border-top: solid 1px;
+}
+
+.cell{
+    display: table-cell;
+    vertical-align: top;
+    box-sizing: border-box;
+    border-left: solid 1px;
+    border-bottom: solid 1px;
+    text-align: center;
+    width: 50%;
+}
+
+.field{
+  margin-bottom: 0.65em;
+}
+
+.user_input_label{
+  display: inline-block;
+  width: 4em;
+  text-align: right;
+}
+
+#back_link{
+  padding: 0.4em;
+}
+
+.user_information{
+    margin-top: 10px;
+    font-size: x-large;
+}
+
+#user_control_links{
+    margin-top: 20px;
+}
+
+#notice{
+    font-size: x-large;
+}
+
+#new_user_span{
+    font-size: x-large;
+}
+
+#users_table{
+    font-size: larger;
+}
+
+#users_table>div,
+#users_table>div>div{
+    border: none;
+}
+
+#users_table>.row{
+    width: 10em;
+    margin-bottom: 0.4em;
+}
+
+.side_frame,
+.sqrt_page{
+    display: inline-block;
+}
+
+.side_frame{
+    width: 40%;
+}
+
+.sqrt_page{
+    width: 30%
+}
+
+#current_user{
+    text-align: center;
+}
+
+#current_user>div{
+    width: 15%;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    float: right;
+    line-height: 3em;
+}

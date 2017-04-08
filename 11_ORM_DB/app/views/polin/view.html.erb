@@ -1,0 +1,21 @@
+<div class='valbut'>
+  <div class='row header'>
+    <div class='cell'><%= t('Decimal') %></div>
+    <div class='cell'><%= t('Binary') %></div>
+  </div>
+  <% if @result != '' %>
+      <% @result.each do |x| %>
+          <div class='row'>
+            <div class='cell'><%= x[0] %></div>
+            <div class='cell'><%= x[1] %></div>
+          </div>
+      <% end %>
+  <%  else %>
+      <div class='row'>
+        <div class='cell'><%= 'Такие значения' %></div>
+        <div class='cell'><%= ' не найдены' %></div>
+      </div>
+  <% end %>
+  <div class="space"></div>
+  <%= link_to "Repeat calculation", :polin_index %>
+</div>

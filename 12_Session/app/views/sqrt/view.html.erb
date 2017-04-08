@@ -1,0 +1,34 @@
+<div class='side_frame'>
+</div>
+
+
+<div class='valbut'>
+  <div class='row header'>
+    <div class='cell'><%= t('Decimal') %></div>
+    <div class='cell'><%= t('Binary') %></div>
+  </div>
+  <% if @result != '' %>
+      <% @result.each do |x| %>
+          <div class='row'>
+            <div class='cell'><%= x[0] %></div>
+            <div class='cell'><%= x[1] %></div>
+          </div>
+      <% end %>
+  <%  else %>
+      <div class='row'>
+        <div class='cell'><%= 'Такие значения' %></div>
+        <div class='cell'><%= ' не найдены' %></div>
+      </div>
+  <% end %>
+  <div class="space"></div>
+  <%= link_to "Repeat calculation", '/' %>
+</div>
+
+
+
+<div class='side_frame' id='current_user'>
+  <div>
+    <div class='headline'><%= t('user') + User.find(session[:current_user_id]).login %></div>
+    <%= link_to t('user_page') , user_path %>
+  </div>
+</div>
